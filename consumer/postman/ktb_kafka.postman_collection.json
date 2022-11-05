@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "4697bcbb-d838-44fa-ba8c-62f5cafd3929",
+		"name": "ktb_kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17882935"
+	},
+	"item": [
+		{
+			"name": "OpenAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AccountHolder\": \"test0001\",\n    \"AccountType\": 1,\n    \"OpeningBalance\": 1000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/openAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"openAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DepositFund",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": \"abc123\",\n    \"Amount\": 400\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/depositFund",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"depositFund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WithdrawFund",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": \"abc123\",\n    \"Amount\": 10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/withdrawFund",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"withdrawFund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CloseAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": \"dba2e05d-4e01-4059-8105-61cf20a18010\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/closeAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"closeAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
